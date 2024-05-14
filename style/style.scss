@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    
+}
+.inter-bold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+p {
+    color: red;
+}
+
+.navbar {
+    width: 100%;
+    height: 3.25rem;
+    min-height: 56px;
+    background-color: #1B1B1B;
+    padding: 0, 1rem;
+    margin: 0;
+    * {
+        margin: 0;
+    }
+    h1 {
+        float: left;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 1rem;
+        font-size: 2.5rem;
+        color: white;
+        #logo-green {
+            color:#07b772;
+        }
+        width: fit-content;
+    }
+    
+    // #navbar-buttons {
+    //     float: right;
+    //     height: 100%;
+    //     color: white;
+    //     width: 40%;
+    //     font-size: 2.25rem;
+    //     // display: grid;
+    //     // grid-template-rows: 100%;
+    //     // grid-auto-flow: row;
+    //     // grid-template-areas: "benefits takeaction sources";
+
+    //     div {
+    //         float:right;
+    //         margin-left: 1rem;
+    //         margin-right: 1rem;
+    //         margin-top: auto;
+    //         margin-bottom: auto;
+    //         border:#07b772 solid 10px;
+    //     }
+        
+
+    // }
+
+    #navbar-buttons {
+        display: grid;
+        grid-auto-flow: column;
+        height: 100%;
+        color: white;
+        width: auto;
+        font-size: 2.25rem;
+        gap: .5rem; /* Adjust as needed */
+        align-items: center; /* Vertically align items */
+        justify-items: center; /* Horizontally align items */
+        float:right;
+        
+        hr.vertical {
+            height: 70%;
+            width:0;
+            border: 3px solid #606060;
+            border-radius: 5px;
+        }
+
+        div {
+            margin-top: auto;
+            margin-bottom: auto;
+        
+        }
+    }
+    
+    
+    
+}
