@@ -34,13 +34,13 @@ p {
   margin-left: 1rem;
   font-size: 2.5rem;
   color: white;
-  width: -moz-fit-content;
   width: fit-content;
 }
 .navbar h1 #logo-green {
   color: #07b772;
 }
 .navbar #navbar-buttons {
+  margin-right: 1rem;
   display: grid;
   grid-auto-flow: column;
   height: 100%;
@@ -91,4 +91,6 @@ p {
 }
 #attention-getter #green-text {
   color: #00c738;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
