@@ -76,4 +76,19 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -40%);
+}
+
+#attention-getter {
+  position: absolute;
+  top: 1;
+  left: 1;
+  transform: translate(175%, 55%);
+  text-align: center;
+  font-size: 1.5rem;
+}
+#attention-getter #orange-text {
+  color: #d17e00;
+}
+#attention-getter #green-text {
+  color: #00c738;
 }/*# sourceMappingURL=style.css.map */

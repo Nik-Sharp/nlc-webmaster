@@ -104,8 +104,25 @@ p {
     
     #windmill {
         position: absolute;
-        top: 50%;  // Adjust these values as needed
-        left: 50%;  // Adjust these values as needed
-        transform: translate(-50%, -40%);  // This centers the SVG
+        top: 50%;  
+        left: 50%;  
+        transform: translate(-50%, -40%);  
+    }
+}
+
+
+#attention-getter {
+    position: absolute;
+    top:1;
+    left:1;
+    transform: translate(175%,55%);
+    text-align: center;
+
+    font-size:1.5rem;
+    #orange-text {
+        color: #d17e00;
+    }
+    #green-text {
+        color: #00c738;
     }
 }
