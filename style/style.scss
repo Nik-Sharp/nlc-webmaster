@@ -92,3 +92,20 @@ p {
     
     
 }
+
+
+#background {
+    position: relative;
+    height: 110svh;
+    width: 100svw;
+    z-index: -1;
+    background: url('../assets/sunnybackground.svg'); 
+    background-size: cover;
+    
+    #windmill {
+        position: absolute;
+        top: 50%;  // Adjust these values as needed
+        left: 50%;  // Adjust these values as needed
+        transform: translate(-50%, -40%);  // This centers the SVG
+    }
+}

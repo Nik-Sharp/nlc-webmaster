@@ -61,4 +61,19 @@ p {
 .navbar #navbar-buttons div {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+#background {
+  position: relative;
+  height: 110svh;
+  width: 100svw;
+  z-index: -1;
+  background: url("../assets/sunnybackground.svg");
+  background-size: cover;
+}
+#background #windmill {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
 }/*# sourceMappingURL=style.css.map */
