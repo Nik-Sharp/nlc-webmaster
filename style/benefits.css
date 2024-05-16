@@ -1,0 +1,14 @@
+#attention-getter {
+  position: absolute;
+  top: 0;
+  right: 1;
+  transform: translate(5%, 90%);
+  text-align: center;
+  max-width: 64rem;
+  font-size: 1.5rem;
+}
+#attention-getter #red-text {
+  color: #de0c0c;
+}
+
+/*# sourceMappingURL=benefits.css.map */
