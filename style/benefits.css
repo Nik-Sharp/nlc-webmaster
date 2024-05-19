@@ -11,4 +11,15 @@
   color: #de0c0c;
 }
 
+#factory {
+  content: url("../assets/factory.svg");
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 5%;
+  width: 30%;
+  z-index: -1;
+  aspect-ratio: auto;
+}
+
 /*# sourceMappingURL=benefits.css.map */

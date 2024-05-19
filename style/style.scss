@@ -95,16 +95,18 @@ p {
 }
 
 
-#background {
+.background {
     position: relative;
     height: 100svh;
     width: 100svw;
     z-index: -1;
     background: url('../assets/sunnybackground.svg'); 
     background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #90DD74;
 }
 
-#grass {
+.grass {
     content: url('../assets/grass.svg');
     position: absolute;
     bottom: 0%;
@@ -112,6 +114,7 @@ p {
     z-index: -1;
 }
 
+// Below should probably be refactored into another file, but oh well
 #windmill {
     position: absolute;
     transform: translateX(-50%);
