@@ -33,4 +33,10 @@ body {
 }
 .slider-content-container h1 {
   text-align: center;
+}
+.slider-content-container img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10rem;
 }/*# sourceMappingURL=action.css.map */
