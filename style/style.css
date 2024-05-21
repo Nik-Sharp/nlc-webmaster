@@ -38,6 +38,7 @@ body {
   color: #07b772;
 }
 .navbar #navbar-buttons {
+  /* disable buttons for mobile, infavor of hamburger meuu */
   margin-right: 1rem;
   display: grid;
   grid-auto-flow: column;
@@ -49,6 +50,11 @@ body {
   align-items: center; /* Vertically align items */
   justify-items: center; /* Horizontally align items */
   float: right;
+}
+@media screen and (max-width: 920px) {
+  .navbar #navbar-buttons {
+    display: none;
+  }
 }
 .navbar #navbar-buttons hr.vertical {
   height: 70%;

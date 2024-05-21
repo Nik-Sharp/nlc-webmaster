@@ -36,31 +36,14 @@ body {
         }
         width: fit-content;
     }
-    
-    // #navbar-buttons {
-    //     float: right;
-    //     height: 100%;
-    //     color: white;
-    //     width: 40%;
-    //     font-size: 2.25rem;
-    //     // display: grid;
-    //     // grid-template-rows: 100%;
-    //     // grid-auto-flow: row;
-    //     // grid-template-areas: "benefits takeaction sources";
 
-    //     div {
-    //         float:right;
-    //         margin-left: 1rem;
-    //         margin-right: 1rem;
-    //         margin-top: auto;
-    //         margin-bottom: auto;
-    //         border:#07b772 solid 10px;
-    //     }
-        
-
-    // }
+   
 
     #navbar-buttons {
+        /* disable buttons for mobile, infavor of hamburger meuu */
+        @media screen and (max-width: 920px) {
+            display: none;
+        }
         margin-right:1rem;
         display: grid;
         grid-auto-flow: column;
@@ -85,6 +68,7 @@ body {
             margin-bottom: auto;
         
         }
+        
     }
     
     
