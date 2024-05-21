@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
 
     <!-- load font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,8 +36,39 @@
 
     <div class="grass"></div>
     <div id="factory"></div>
-    <div id="attention-getter" class="inter-bold">
-        <h1 style="text-align: left;">Fossil fuels are <span id="red-text">destroying</span> <br>the ozone layer</h1>
-        <h2 style="text-align: left; padding: none;">The ozone layer acts as a natural shield, protecting us from too much UV radiation</h2>
-    </div>
+    <div class="swiper">
+		<div class="swiper-wrapper" stlye="">
+		  	
+            <div class="swiper-slide inter-bold">
+                <div class="slider-content-container">
+                    <h1>Fossil fuels are <span id="red-text">destroying</span> the ozone layer</h1>
+                    <h2>The ozone layer acts as a natural shield, protecting us from too much UV radiation</h2>
+				</div>
+            </div>
+            <div class="swiper-slide inter-bold">
+                <div class="slider-content-container">
+                    <h1>The ozone layer protects us all</h1>
+                    <h2>Excess amount of UV radiation can cause skin cancer, along with harming marine life and crops</h2>
+				</div>
+            </div>
+
+		</div>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+  	</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+    <script>
+    	var swiper = new Swiper(".swiper", {
+    	  	loop: true,
+            direction: 'vertical',
+    	  	navigation: {
+    			  nextEl: ".swiper-button-next",
+    			  prevEl: ".swiper-button-prev",
+    			},
+    		});
+    </script>
 </body>
+</html>
