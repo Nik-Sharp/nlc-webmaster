@@ -37,6 +37,16 @@ body {
 .navbar h1 #logo-green {
   color: #07b772;
 }
+.navbar #hamburger-button {
+  display: block;
+  float: right;
+  padding: 1rem;
+}
+@media screen and (min-width: 920px) {
+  .navbar #hamburger-button {
+    display: none;
+  }
+}
 .navbar #navbar-buttons {
   /* disable buttons for mobile, infavor of hamburger meuu */
   margin-right: 1rem;

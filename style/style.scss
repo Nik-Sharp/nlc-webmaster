@@ -37,6 +37,15 @@ body {
         width: fit-content;
     }
 
+    #hamburger-button {
+        @media screen and (min-width: 920px) {
+            display: none;
+        }
+        display:block;
+        float:right;
+        padding: 1rem;
+    }
+
    
 
     #navbar-buttons {
