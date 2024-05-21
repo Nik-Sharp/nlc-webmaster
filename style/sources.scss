@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.inter-bold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+#source-container {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+
+
+    
+    width: 100%;
+    height: 100%;
+    background: center rgba(97, 97, 97, .39) no-repeat; 
+    a {
+        font-size: 2.5rem;
+    }
+}
