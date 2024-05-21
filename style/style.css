@@ -12,10 +12,6 @@ body {
   font-variation-settings: "slnt" 0;
 }
 
-p {
-  color: red;
-}
-
 .navbar {
   width: 100%;
   height: 3.25rem;
@@ -35,6 +31,7 @@ p {
   margin-left: 1rem;
   font-size: 2.5rem;
   color: white;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .navbar h1 #logo-green {
@@ -115,6 +112,4 @@ p {
 #attention-getter h2 {
   margin-top: 0%;
   font-size: 3rem;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
