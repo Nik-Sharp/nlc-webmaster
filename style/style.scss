@@ -45,6 +45,7 @@ body {
         float:right;
         padding: 1rem;
     }
+    
 
    
 
@@ -83,7 +84,21 @@ body {
     
     
 }
+#mobile-dropdown {
+    ul {
+        padding: 0;
 
+    }
+    @media screen and (min-width: 920px) {
+        visibility: hidden;
+    }
+    background: center #1B1B1B;
+    float: right;
+    text-align: right;
+    padding: 1rem;
+    position: relative;
+    border-radius: 0px 0px 0px 20px;
+}
 
 .background {
     position: relative;

@@ -17,7 +17,9 @@
         <nav class="navbar inter-bold">
             <h1><span id="logo-green">Greenify</span>YourLife</h1>
             <div id="navbar-buttons">
-                <a href="./pages/benefits.html" style="text-decoration: inherit; color: inherit;"><div>Benefits</div></a>
+                <a href="./pages/benefits.html" style="text-decoration: inherit; color: inherit;">
+                    <div>Benefits</div>
+                </a>
                 <hr class="vertical">
                 <a href="./pages/action.html" style="text-decoration: inherit; color: inherit;">
                     <div>Take Action</div>
@@ -31,6 +33,22 @@
                 <img src="./assets/hamburger.svg">
             </div>
         </nav>
+        <div id="mobile-dropdown">
+            <ul><a class="inter-bold" href="">Benefits</a></ul>
+            <ul><a class="inter-bold" href="">Take Action</a></ul>
+            <ul><a class="inter-bold" href="">Sources</a></ul>
+        </div>  
+        <script>
+            let dropdown = document.getElementById("mobile-dropdown");
+            let hamburger_menu = document.getElementById("hamburger-button");
+            hamburger_menu.addEventListener("click", (e) => {
+                if (dropdown.style.visibility == "hidden") {
+                    dropdown.style.visibility = "visible";
+                } else {
+                    dropdown.style.visibility = "hidden";
+                }
+            });
+        </script>
 
         <div id="attention-getter" class="inter-bold">
             <h1>The planet is <span id="orange-text">burning</span></h1>
