@@ -18,11 +18,13 @@
 </head>
 <body class="background">
     <nav class="navbar inter-bold">
-        <a href="../index.html">
+        <div style="align-self: center;">
             <h1><span id="logo-green">Greenify</span>YourLife</h1>
-        </a>
+        </div>
         <div id="navbar-buttons">
-            <a href="./benefits.html" style="text-decoration: inherit; color: inherit;"><div>Benefits</div></a>
+            <a href="./benefits.html" style="text-decoration: inherit; color: inherit;">
+                <div>Benefits</div>
+            </a>
             <hr class="vertical">
             <a href="./action.html" style="text-decoration: inherit; color: inherit;">
                 <div>Take Action</div>
@@ -32,7 +34,26 @@
                 <div>Sources</div>
             </a>
         </div>
+        <div id="hamburger-button">
+            <img src="../assets/hamburger.svg">
+        </div>
     </nav>
+    <div id="mobile-dropdown">
+        <ul><a class="inter-bold" href="./benefits.html">Benefits</a></ul>
+        <ul><a class="inter-bold" href="./action.html">Take Action</a></ul>
+        <ul><a class="inter-bold" href="./sources.html">Sources</a></ul>
+    </div>
+    <script>
+		let dropdown = document.getElementById("mobile-dropdown");
+		let hamburger_menu = document.getElementById("hamburger-button");
+		hamburger_menu.addEventListener("click", (e) => {
+			if (dropdown.style.visibility == "hidden") {
+				dropdown.style.visibility = "visible";
+			} else {
+				dropdown.style.visibility = "hidden";
+			}
+		});
+	</script>
 
     <div class="grass"></div>
     <div id="factory"></div>

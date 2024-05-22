@@ -20,24 +20,43 @@
 
 <body class="background">
 
-  	<nav class="navbar inter-bold">
-		<a href="../index.html">
+	<nav class="navbar inter-bold">
+		<div style="align-self: center;">
 			<h1><span id="logo-green">Greenify</span>YourLife</h1>
-		</a>
+		</div>
 		<div id="navbar-buttons">
 			<a href="./benefits.html" style="text-decoration: inherit; color: inherit;">
 				<div>Benefits</div>
 			</a>
-	  		<hr class="vertical">
-	  		<a href="./action.html" style="text-decoration: inherit; color: inherit;">
+			<hr class="vertical">
+			<a href="./action.html" style="text-decoration: inherit; color: inherit;">
 				<div>Take Action</div>
-	  		</a>
-	  		<hr class="vertical">
-	  		<a href="./sources.html" style="text-decoration: inherit; color: inherit;">
+			</a>
+			<hr class="vertical">
+			<a href="./sources.html" style="text-decoration: inherit; color: inherit;">
 				<div>Sources</div>
-	  		</a>
+			</a>
 		</div>
-  	</nav>
+		<div id="hamburger-button">
+			<img src="../assets/hamburger.svg">
+		</div>
+	</nav>
+	<div id="mobile-dropdown">
+		<ul><a class="inter-bold" href="./benefits.html">Benefits</a></ul>
+		<ul><a class="inter-bold" href="./action.html">Take Action</a></ul>
+		<ul><a class="inter-bold" href="./sources.html">Sources</a></ul>
+	</div>
+	<script>
+		let dropdown = document.getElementById("mobile-dropdown");
+		let hamburger_menu = document.getElementById("hamburger-button");
+		hamburger_menu.addEventListener("click", (e) => {
+			if (dropdown.style.visibility == "hidden") {
+				dropdown.style.visibility = "visible";
+			} else {
+				dropdown.style.visibility = "hidden";
+			}
+		});
+	</script>
 
     <div id="source-container" class="inter-bold">
             <a href="https://education.nationalgeographic.org/resource/ozone-layer">https://education.nationalgeographic.org/resource/ozone-layer/</a><br>
@@ -45,6 +64,7 @@
             <a href="https://www.cbsnews.com/news/biden-offering-13-billion-to-lower-energy-costs-heres-how-to-qualify-liheap">https://www.cbsnews.com/news/biden-offering-13-billion-to-lower-energy-costs-heres-how-to-qualify-liheap/</a><br>
             <a href="https://www.energy.gov/scep/home-energy-rebates-programs">https://www.energy.gov/scep/home-energy-rebates-programs</a><br>
             <a href="https://www.acf.hhs.gov/ocs/programs/liheap">https://www.acf.hhs.gov/ocs/programs/liheap</a><br>
+			<a href="https://commons.wikimedia.org/wiki/File:Energy_Star_logo.svg">https://commons.wikimedia.org/wiki/File:Energy_Star_logo.svg</a><br>
     </div>
 
     <!--Background Elements-->
